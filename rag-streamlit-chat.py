@@ -38,7 +38,7 @@ def create_index(document_paths):
 
     nodes = node_parser.get_nodes_from_documents(documents)
 
-    client = QdrantClient(host='https://46e915dc-c126-4445-af6d-265c738b7848.us-east4-0.gcp.cloud.qdrant.io', port=443, api_key=st.secrets.QDRANT_API_KEY)
+    client = QdrantClient(host='https://46e915dc-c126-4445-af6d-265c738b7848.us-east4-0.gcp.cloud.qdrant.io', port=443, api_key=st.secrets.qdrant_key)
 
     collection_name = "RAG"
     vector_store = QdrantVectorStore(
