@@ -13,8 +13,8 @@ from qdrant_client import QdrantClient
 
 
 def initialize_llm():
-    Settings.llm = Ollama(model="llama3", request_timeout=30.0)
-    embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
+    Settings.llm = OpenAI(model="gpt-3.5-turbo", temperature=0)
+    embed_model = OpenAIEmbedding()
     Settings.embed_model = embed_model
 
 
@@ -81,12 +81,12 @@ class ChatEngine:
         self.conversation_history.append({"role": "assistant", "content": response})
         return response
 
-
+openai.api_key = st.secrets.openai_key
 # Streamlit app interface
 st.title("Advanced RAG Chat Application")
 
 st.sidebar.title("Upload and Index Document")
-uploaded_file = st.sidebar.file_uploader("Choose a text file", type="txt")
+uploaded_file = st.sidebar.file_uploader("Choose a text file", type=["txt", "docx"])
 
 initialize_llm()
 
