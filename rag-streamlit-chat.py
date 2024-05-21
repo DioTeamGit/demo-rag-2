@@ -8,7 +8,8 @@ from llama_index.core.postprocessor import (
     SentenceTransformerRerank,
 )
 from llama_index.core.settings import Settings
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding, OpenAIEmbedding
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.embeddings import OpenAIEmbedding
 from llama_index.llms.ollama import Ollama
 from llama_index.vector_stores.qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
