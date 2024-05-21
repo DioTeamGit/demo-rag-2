@@ -1,10 +1,10 @@
-# 📦 Advanced RAG Chat Application with Llama3, LlamaIndex, and Qdrant
+# 📦 Advanced RAG Chat Application with OpenAI, LlamaIndex, and Qdrant
 
 Retrieval-augmented generation (RAG) is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.
 
 ## Tools Used:
 1. Ollama (a tool that allows you to run open-source large language models (LLMs) locally on your machine)
-2. Llama3 (the most capable openly available LLM to date)
+2. OPenAI (the most capable openly available LLM to date)
 3. LlamaIndex (a framework for building context-augmented LLM applications)
 4. Qdrant (vector similarity search engine and vector database)
 5. Streamlit (framework to rapidly build machine learning and data science web apps)
