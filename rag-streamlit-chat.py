@@ -1,6 +1,6 @@
 import streamlit as st
 import openai
-from llama_index.llms.openai import OpenAI
+from llama_index.llms.openai import OpenAI, OpenAIEmbedding
 from llama_index.core import SimpleDirectoryReader, StorageContext, VectorStoreIndex
 from llama_index.core.node_parser import SentenceWindowNodeParser
 from llama_index.core.postprocessor import (
