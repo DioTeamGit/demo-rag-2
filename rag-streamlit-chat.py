@@ -14,7 +14,7 @@ from llama_index.llms.ollama import Ollama
 from llama_index.vector_stores.qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 
-
+ERRORE DI PROPOSITO PER TIRARE GIù APP
 def initialize_llm():
     Settings.llm = OpenAI(model="gpt-3.5-turbo", temperature=0)
     embed_model = OpenAIEmbedding()
